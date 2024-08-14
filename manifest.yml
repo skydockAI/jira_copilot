@@ -1,0 +1,27 @@
+modules:
+  jira:issuePanel:
+    - key: jira-copilot-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Jira Copilot
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'write:jira-work'
+  external:
+    fetch:
+      backend:
+        - 'https://api.openai.com'
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/28e89b2b-04da-444a-96d6-53d6604524ed
