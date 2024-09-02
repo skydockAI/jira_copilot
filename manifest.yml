@@ -7,16 +7,28 @@ modules:
       render: native
       title: Jira Copilot
       icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  jira:adminPage:
+    - key: jira-copilot-admin-page
+      resource: admin_page
+      resolver:
+        function: admin_page_resolver
+      render: native
+      title: Jira Copilot Config
   function:
     - key: resolver
       handler: index.handler
+    - key: admin_page_resolver
+      handler: admin_page.handler
 resources:
   - key: main
     path: src/frontend/index.jsx
+  - key: admin_page
+    path: src/frontend/admin_page.jsx
 permissions:
   scopes:
     - 'read:jira-work'
     - 'write:jira-work'
+    - 'storage:app'
   external:
     fetch:
       backend:

@@ -21,25 +21,30 @@ git clone https://github.com/skydockAI/jira_copilot.git
 ```bash
 npm install
 ```
-- Register your app app by running (assuming that you have successfully setup Forge and login):
+- Register the app (assuming that you have successfully setup Forge and login):
 ```bash
 forge register
 ```
 
-- Build and deploy your app by running:
+- Build and deploy the app:
 ```bash
 forge deploy
 ```
 
-- Install your app in an Atlassian site by running:
+- Install the app to your Atlassian site:
 ```bash
 forge install
 ```
+
 ## Features
-- Jira Ticket Validation and Recommendations
-- Ticket Rewriting
-- Test Case Generation in BDD Format
-- Language Translation
+- A powerful and flexible framework that supports a wide range of smart functionalities (features) such as:
+    + Ticket Validation and Recommendations
+    + Ticket Rewriting
+    + Ticket Summarization
+    + Test Case Generation in BDD Format
+    + Language Translation
+    + etc...
+- An Configuration page for site admins to manage system prompt and features definition
 - Custom Prompts for Extended Functionality
 
 ## License:
