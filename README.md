@@ -17,7 +17,7 @@ git clone https://github.com/skydockAI/jira_copilot.git
 ```
 - Open [config.js](/src/resolvers/config.js) file and configure your OpenAI or AzureOpenAPI keys
 
-- Run
+- Install required libraries:
 ```bash
 npm install
 ```
@@ -44,8 +44,46 @@ forge install
     + Test Case Generation in BDD Format
     + Language Translation
     + etc...
+- Ability to save AI generated contents by:
+    + Updating ticket description
+    + Appending to ticket description
+    + Adding as a comment
 - An Configuration page for site admins to manage system prompt and features definition
 - Custom Prompts for Extended Functionality
+
+## Screenshots
+- Running for the first time:
+<img src="/resources/first_time.png" alt="Running for the first time"></img>
+
+- Manage system prompt and features definition:
+<img src="/resources/config_page.png" alt="Manage system prompt and features definition"></img>
+
+- Full UI with pre-defined features:
+<img src="/resources/features_ui.png" alt="Full UI with pre-defined features"></img>
+
+- Feature: Validate user story:
+<img src="/resources/feature_validate.png" alt="Feature: Validate user story"></img>
+
+- Feature: Re-write user story:
+<img src="/resources/feature_improve.png" alt="Feature: Re-write user story"></img>
+
+- Feature: Summarize ticket description:
+<img src="/resources/feature_summarize.png" alt="Feature: Summarize ticket description"></img>
+
+- Feature: Generate test cases:
+<img src="/resources/feature_create_test_cases.png" alt="Feature: Generate test cases"></img>
+
+- Feature: Language translation:
+<img src="/resources/feature_translate.png" alt="Feature: Language translation"></img>
+
+- Save AI response: Append to ticket description:
+<img src="/resources/append_to_description.png" alt="Save AI response: Append to ticket description"></img>
+
+- Save AI response: Add as a comment:
+<img src="/resources/add_as_comment.png" alt="Save AI response: Add as a comment"></img>
+
+- Custom request:
+<img src="/resources/custom_request.png" alt="Custom request"></img>
 
 ## License:
 **Slides Assistant** is open-source and licensed under the [GPL-3.0](LICENSE) license.
