@@ -86,4 +86,4 @@ forge install
 <img src="/resources/custom_request.png" alt="Custom request"></img>
 
 ## License:
-**Slides Assistant** is open-source and licensed under the [GPL-3.0](LICENSE) license.
+**Jira Copilot** is open-source and licensed under the [GPL-3.0](LICENSE) license.
